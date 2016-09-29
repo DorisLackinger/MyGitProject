@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyGitProject.Daten;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,6 +12,8 @@ namespace MyGitProject
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World");
+            Schueler s = new Schueler("Hans Meier", new DateTime(2001, 12, 17));
+            Console.WriteLine(s);
         }
     }
 }

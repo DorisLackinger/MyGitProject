@@ -10,6 +10,7 @@ namespace MyGitProject.Daten
     {
         String name;
         DateTime gebDAt;
+        List<int> noten;
 
         public Schueler(String name, DateTime gebDat)
         {

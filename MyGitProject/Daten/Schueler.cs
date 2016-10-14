@@ -4,17 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyGitProject.Daten
-{
-    public class Schueler
-    {
-        String nachname;
+namespace MyGitProject.Daten {
+    public class Schueler {
+        String name;
         DateTime gebDAt;
         List<int> noten=new List<int>();
 
-        public Schueler(String name, DateTime gebDat)
-        {
-            Nachname = name;
+        public Schueler(String name, DateTime gebDat) {
+            Name = name;
             GebDAt = gebDat;
         }
 
@@ -31,21 +28,17 @@ namespace MyGitProject.Daten
             }
         }
 
-        public DateTime GebDAt
-        {
-            get
-            {
+        public DateTime GebDAt {
+            get {
                 return gebDAt;
             }
 
-            set
-            {
+            set {
                 gebDAt = value;
             }
         }
-        public override string ToString()
-        {
-            return nachname+" geb am "+GebDAt;
+        public override string ToString() {
+            return name + " geb am " + GebDAt;
         }
     }
 }

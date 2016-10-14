@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace MyGitProject.Daten {
     public class Schueler {
-        String name;
+        String nachname;
         DateTime gebDAt;
         List<int> noten=new List<int>();
 
         public Schueler(String name, DateTime gebDat) {
-            Name = name;
+            Nachname = name;
             GebDAt = gebDat;
         }
 

@@ -38,7 +38,7 @@ namespace MyGitProject.Daten {
             }
         }
         public override string ToString() {
-            return name + " geb am " + GebDAt;
+            return nachname + " geb am " + GebDAt;
         }
     }
 }

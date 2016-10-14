@@ -8,26 +8,26 @@ namespace MyGitProject.Daten
 {
     public class Schueler
     {
-        String name;
+        String nachname;
         DateTime gebDAt;
-        List<int> noten;
+        List<int> noten=new List<int>();
 
         public Schueler(String name, DateTime gebDat)
         {
-            Name = name;
+            Nachname = name;
             GebDAt = gebDat;
         }
 
-        public string Name
+        public string Nachname
         {
             get
             {
-                return name;
+                return nachname;
             }
 
             set
             {
-                name = value;
+                nachname = value;
             }
         }
 
@@ -45,7 +45,7 @@ namespace MyGitProject.Daten
         }
         public override string ToString()
         {
-            return name+" geb am "+GebDAt;
+            return nachname+" geb am "+GebDAt;
         }
     }
 }
